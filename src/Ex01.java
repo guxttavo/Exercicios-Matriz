@@ -16,7 +16,7 @@ public class Ex01 {
 
         for (int i = 0; i < numerosAleatorios.length; i++) {
             for (int j = 0; j < numerosAleatorios[i].length; j++) {
-                numerosAleatorios[i][j] = numeroRandom.nextInt(100);
+                numerosAleatorios[i][j] = numeroRandom.nextInt(9);
             }
         }
 
@@ -24,7 +24,7 @@ public class Ex01 {
         int linha = 0;
         int coluna = 0;
         for (int i = 0; i < numerosAleatorios.length; i++) {
-            for (int j = 0; j < numerosAleatorios.length; j++) {
+            for (int j = 0; j < numerosAleatorios[i].length; j++) {
                 if (numerosAleatorios[i][j] > maior) {
                     maior = numerosAleatorios[i][j];
                     linha = i;
